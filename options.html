@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Block websites settings</title>
+    <link rel="stylesheet" href="https://font.googleapis.com/css?family=OpenSans">
+    <style>
+      body {
+        font-family: 'OpenSans', sans-serif;
+        font-size: 18px;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/halftone-yellow.png');
+      }
+      
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 2em;
+        min-width: 300px;
+        height: 400px;
+        background: white;
+        box-shadow: 0 5px 25px 0
+                    rgba(0, 0 , 0, .25)
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .website {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="content">
+      <div>
+        <input id="website"/>
+        <button id="add">Add</button>
+      </div>
+      
+      <ul id="list">
+      </ul>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
